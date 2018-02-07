@@ -1,0 +1,63 @@
+<mvc:View controllerName="DPROP.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns:tnt="sap.tnt" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:acc="DPROP.control" xmlns:l="sap.ui.layout">
+	<tnt:ToolHeader id="brandHeader" class="brandHeader">
+		<Image src="images/DeloitteLogo.png" height="15px" class="sapUiMediumMarginBegin sapUiTinyMarginTop sapUiTinyMarginBottom"/>
+		<ToolbarSpacer/>
+		<Image src="images/IncidentIQ.png" height="60px" class="sapUiTinyMarginTop"/>
+		<ToolbarSpacer/>
+		<Image src="images/LOGO.png" height="30px" class="sapUiMediumMarginEnd sapUiTinyMarginTop sapUiTinyMarginBottom"/>
+	</tnt:ToolHeader>
+	<App id="SplitApp1">
+		<Page id="videoPage" title="Deloitte SafetyIQ" class="sapUiStdPage test" showHeader="false">
+			<content>
+				<VBox width="98%" alignItems="Center">
+					<!--<acc:ChartJSControl width="500" height="250" responsive="true" chartType="bar" id="videoFootcountChart"-->
+					<!--	options="{title: {display: 'true', text: 'Aggregated Footcount'}}"/>-->
+					<HBox justifyContent="Center">
+						<GenericTile class="sapUiSmallMargin sapUiMediumMarginBegin sapUiMediumMarginEnd" header="Car" subheader="Count" press="press">
+							<tileContent>
+								<TileContent unit="Tracked">
+									<content>
+										<NumericContent id="peopleText" value="0" valueColor="Critical" indicator="Up" icon="sap-icon://physical-activity"/>
+									</content>
+								</TileContent>
+							</tileContent>
+						</GenericTile>
+						<GenericTile class="sapUiSmallMargin sapUiMediumMarginBegin sapUiMediumMarginEnd" header="Bus" subheader="Count" press="press">
+							<tileContent>
+								<TileContent unit="Tracked" footer="">
+									<content>
+										<NumericContent id="equipText" value="0" valueColor="Critical" indicator="Down" icon="sap-icon://wrench"/>
+									</content>
+								</TileContent>
+							</tileContent>
+						</GenericTile>
+						<GenericTile class="sapUiSmallMargin sapUiMediumMarginBegin sapUiMediumMarginEnd" header="Truck" subheader="Count" press="press">
+							<tileContent>
+								<TileContent unit="Tracked" footer="">
+									<content>
+										<NumericContent id="safety1" value="0" valueColor="Critical" indicator="Down" icon="sap-icon://wrench"/>
+									</content>
+								</TileContent>
+							</tileContent>
+						</GenericTile>
+						<GenericTile class="sapUiSmallMargin sapUiMediumMarginBegin sapUiMediumMarginEnd" header="Incidents" subheader="Count" press="press">
+							<tileContent>
+								<TileContent unit="Reported" footer="">
+									<content>
+										<NumericContent id="carText" value="0" valueColor="Error" indicator="Up" icon="sap-icon://car-rental"/>
+									</content>
+								</TileContent>
+							</tileContent>
+						</GenericTile>
+					</HBox>
+					<HBox justifyContent="SpaceBetween" class="sapUiLargeMarginTop">
+						<VBox id="vidPlayer" alignItems="Start" class="sapUiMediumMarginEnd"/>
+						<FlexBox width="750px" height="720px" id="map_canvas" class="sapUiMediumMarginBegin" fitContainer="true"/>
+					</HBox>
+				</VBox>
+			</content>
+		</Page>
+	</App>
+</mvc:View>

@@ -1,0 +1,114 @@
+/* Enter your custom styles here */
+
+.brandHeader {
+    background-color: black !important;
+}
+
+.sapMShellBrandingBar {
+    height: 0px;
+}
+
+.sapMPageHeader::before {
+    border-top-width: 0rem;
+}
+
+.sapMBarPH {
+    background-color: #000000;
+}
+
+.sapUiUfdShellBrand {
+    background-color: yellowgreen;
+}
+
+.myShell .sapUiUfdShellHeader {
+    background-color: black;
+}
+
+.myShell .sapUiUfdShellBrand {
+    background-color: yellowgreen;
+}
+
+.test .sapContrast.sapMIBar.sapMFooter-CTX {
+  background-color: black !important;
+  border-top-color: yellowgreen;
+  border-top-width: thick;
+}
+
+.heatmap {
+    position: absolute;
+    width: 30px;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+.liveData {
+    position: absolute;
+    width: 30px;
+    top: 60px;
+    left: 10px;
+    z-index: 2;
+}
+
+.marker {
+    position: absolute;
+    width: 30px;
+    top: 110px;
+    left: 10px;
+    z-index: 2;
+}
+
+.reset {
+    position: absolute;
+    width: 30px;
+    top: 160px;
+    left: 10px;
+    z-index: 2;
+}
+
+.blackPanel {
+    color: black !important;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 0px;
+    top: 0px;
+    z-index: -1000;
+    overflow: hidden;
+}
+
+.videoPlayer {
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.timeline {
+    position: absolute;
+    top: 50px;
+    z-index: 99;
+}
+
+.xtraLargeFont {
+    font-size: 200%;
+    color: #00ff00;
+}
+
+.hbox_tile_LookAlike {
+    /*border: 1px solid black;*/
+    /*-moz-box-shadow: 0 0 5px 2px #fff;*/
+    /*box-shadow: 0 0 5px 2px #b9b1b1;*/
+    background-color: #000000;
+}
+
+.myStyle {
+    height: 21rem;
+    width: 11rem;
+}
